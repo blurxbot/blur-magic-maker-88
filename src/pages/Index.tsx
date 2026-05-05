@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Github, Twitter, Instagram, MessageCircle, Music, Eye, Volume2, VolumeX } from "lucide-react";
 import avatar from "@/assets/avatar.jpg";
-import { Particles } from "@/components/biolink/Particles";
+import bg from "@/assets/bg.gif";
 import { GlitchText } from "@/components/biolink/GlitchText";
 import { EnterOverlay } from "@/components/biolink/EnterOverlay";
 
@@ -19,15 +19,20 @@ const Index = () => {
 
   return (
     <main className="relative h-screen w-screen overflow-hidden bg-background text-foreground">
-      {/* Vignette + radial glow */}
+      {/* Animated background */}
+      <img
+        src={bg}
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+      />
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at center, hsl(0 0% 10% / 0.6) 0%, hsl(0 0% 0%) 75%)",
+            "radial-gradient(ellipse at center, hsl(0 0% 0% / 0.35) 0%, hsl(0 0% 0% / 0.75) 80%)",
         }}
       />
-      <Particles count={90} />
 
       {!entered && <EnterOverlay onEnter={() => setEntered(true)} />}
 
