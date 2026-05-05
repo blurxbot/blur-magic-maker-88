@@ -37,6 +37,7 @@
     font-family: 'Inter', system-ui, sans-serif;
     overflow: hidden;
   }
+  #lovable-badge { display: none !important; }
 }
 
 @layer utilities {
