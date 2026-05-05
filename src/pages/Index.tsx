@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Music, Eye, Volume2, VolumeX, Gamepad2 } from "lucide-react";
+import { Music, Eye, Volume2, VolumeX } from "lucide-react";
+import { RobloxIcon } from "@/components/biolink/RobloxIcon";
 import avatar from "@/assets/avatar.gif";
 import bg from "@/assets/bg.gif";
 import { GlitchText } from "@/components/biolink/GlitchText";
@@ -7,7 +8,7 @@ import { EnterOverlay } from "@/components/biolink/EnterOverlay";
 
 const socials = [
   {
-    icon: Gamepad2,
+    icon: RobloxIcon,
     href: "https://www.roblox.com/users/9760922658/profile",
     label: "Roblox",
   },
