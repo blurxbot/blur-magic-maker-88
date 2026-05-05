@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Github, Twitter, Instagram, MessageCircle, Music, Eye, Volume2, VolumeX } from "lucide-react";
-import avatar from "@/assets/avatar.jpg";
+import { Music, Eye, Volume2, VolumeX, Gamepad2 } from "lucide-react";
+import avatar from "@/assets/avatar.gif";
 import bg from "@/assets/bg.gif";
 import { GlitchText } from "@/components/biolink/GlitchText";
 import { EnterOverlay } from "@/components/biolink/EnterOverlay";
 
 const socials = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: MessageCircle, href: "#", label: "Discord" },
-  { icon: Music, href: "#", label: "Spotify" },
+  {
+    icon: Gamepad2,
+    href: "https://www.roblox.com/users/9760922658/profile",
+    label: "Roblox",
+  },
 ];
 
 const Index = () => {
