@@ -3,7 +3,6 @@ import { Eye } from "lucide-react";
 import { RobloxIcon } from "@/components/biolink/RobloxIcon";
 import avatar from "@/assets/avatar.gif";
 import bg from "@/assets/bg.gif";
-import { GlitchText } from "@/components/biolink/GlitchText";
 import { EnterOverlay } from "@/components/biolink/EnterOverlay";
 
 const socials = [
@@ -58,8 +57,8 @@ const Index = () => {
                 />
               </div>
 
-              <h1 className="mt-5 text-4xl font-bold tracking-tight">
-                <GlitchText text="Blurski" />
+              <h1 className="text-shine mt-5 text-4xl font-bold tracking-tight">
+                Blurski
               </h1>
               <p className="mt-2 text-sm text-muted-foreground">Wsp I'm Blurski</p>
 
